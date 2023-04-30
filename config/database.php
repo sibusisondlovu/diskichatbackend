@@ -1,9 +1,9 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $database_name = "diskichat";
-    private $username = "developer";
-    private $password = "1qazxsw2#EDC";
+    private $database_name = "pqawol_app";
+    private $username = "pqawol_developer";
+    private $password = "O2F}~@-u,UT(";
     public $conn;
     public function getConnection(){
         $this->conn = null;

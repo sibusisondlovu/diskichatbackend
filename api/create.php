@@ -20,6 +20,12 @@ try {
     ];
 
     $createdUser =  $serverClient->upsertUser($streamUser);
+
+    $database = new Database();
+    $db = $database->getConnection();
+    $users = new User($db);
+
+    $users->createUser();
     echo json_encode($token);
 
 

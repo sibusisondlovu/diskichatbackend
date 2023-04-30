@@ -3,7 +3,7 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://v3.football.api-sports.io/fixtures?league=288&season=2022&from=2023-01-27&to=2023-02-02',
+    CURLOPT_URL => 'https://v3.football.api-sports.io/fixtures?live=39-61-48',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
@@ -20,7 +20,7 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
-$fp = fopen('fixtures.json', 'w');
+$fp = fopen('live-matches/gifixtures.json', 'w');
 fwrite($fp, $response);
 fclose($fp);
 echo $response;

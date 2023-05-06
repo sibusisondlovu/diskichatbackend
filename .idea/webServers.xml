@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="7eb7cf43-cde7-4d5e-91ff-206041687007" name="DiskiChat" url="https://www.diskichat.com">
-        <fileTransfer host="ftp.diskichat.com" port="21">
+      <webServer id="7eb7cf43-cde7-4d5e-91ff-206041687007" name="DiskiChat" url="">
+        <fileTransfer host="ftp.jaspagroup.co.za" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
